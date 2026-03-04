@@ -1,0 +1,261 @@
+.payment-page {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f9;
+    padding: 40px 20px;
+}
+
+.payment-card {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.payment-card.center {
+    text-align: center;
+}
+
+.payment-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.payment-amount {
+    font-size: 42px;
+    font-weight: 700;
+    color: #23233a;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    margin: 25px 0;
+}
+
+.payment-methods h5 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.radio-option {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.radio-option input {
+    margin-right: 8px;
+}
+
+.payment-actions {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #23233a, #2f2f55);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.btn-secondary {
+    background: #f3f4f6;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-wallet {
+    background: #0f766e;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-wallet:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.btn-success {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.success-circle {
+    width: 80px;
+    height: 80px;
+    background: #10b981;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.loader {
+    border: 6px solid #e5e7eb;
+    border-top: 6px solid #23233a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    animation: spin 1s linear infinite;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-group input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #23233a;
+}
+
+.stripe-card-wrapper {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+}
+
+.card-row {
+    display: flex;
+    gap: 12px;
+}
+
+.error-text {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 6px;
+}
+.success-text {
+    color: #059669;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.prepayment-section {
+    margin-top: 26px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 18px;
+}
+
+.prepayment-section h5 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.prepayment-history {
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+.prepayment-history table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.prepayment-history th,
+.prepayment-history td {
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 6px;
+}
+
+.status-chip {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.status-chip.pending {
+    background: #fff7ed;
+    color: #9a3412;
+}
+
+.status-chip.approved {
+    background: #ecfdf3;
+    color: #166534;
+}
+
+.status-chip.rejected {
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.prepayment-applied-note {
+    margin-top: -6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #1f4f8a;
+    font-weight: 600;
+}
+
+.foreclosure-summary {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

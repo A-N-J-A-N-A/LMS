@@ -1,0 +1,182 @@
+.reports-page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.reports-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--admin-text-900);
+}
+
+.reports-header p {
+  margin: 8px 0 18px;
+  color: var(--admin-text-500);
+}
+
+.reports-controls {
+  display: grid;
+  grid-template-columns: 1.4fr 220px 220px;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.reports-controls input,
+.reports-controls select {
+  border: 1px solid #c8d5e4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.reports-controls input:focus,
+.reports-controls select:focus {
+  border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(31, 79, 138, 0.14);
+}
+
+.reports-table-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: var(--admin-shadow);
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reports-table thead {
+  background: #f5f8fc;
+}
+
+.reports-table th,
+.reports-table td {
+  text-align: left;
+  padding: 13px 14px;
+  border-bottom: 1px solid #ebf1f8;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.reports-table th {
+  color: var(--admin-text-700);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.reports-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.no-data {
+  text-align: center;
+  color: var(--admin-text-500);
+  padding: 22px;
+}
+
+.reports-pagination {
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.reports-pagination button {
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  background: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.reports-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1100px) {
+  .reports-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .reports-header h1 {
+    font-size: 24px;
+  }
+
+  .reports-table th,
+  .reports-table td {
+    padding: 10px 12px;
+  }
+
+  .reports-pagination {
+    gap: 10px;
+  }
+}
+
+
+/* ===== Dark Dashboard Container ===== */
+.dashboard-overview {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: 25px;              /* ⬅ reduced from 40px */
+  border-radius: 26px;
+  color: white;
+  margin-bottom: 25px;        /* ⬅ slightly reduced */
+}
+
+/* Top Text */
+.dashboard-top h1 {
+  font-size: 32px;            /* ⬅ slightly smaller */
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.dashboard-top p {
+  font-size: 15px;            /* ⬅ slightly smaller */
+  opacity: 0.85;
+  margin-bottom: 25px;        /* ⬅ reduced space */
+}
+
+/* Cards Layout */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;                  /* ⬅ reduced gap */
+}
+
+/* White Cards */
+.overview-card {
+  flex: 1;
+  background: #f1f5f9;
+  color: #1e293b;
+  padding: 18px;              /* ⬅ reduced from 30px */
+  border-radius: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 120px;          /* ⬅ controls card height */
+}
+
+/* Number */
+.overview-card h2 {
+  font-size: 32px;            /* ⬅ reduced from 40px */
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Label */
+.overview-card p {
+  font-size: 14px;            /* ⬅ slightly smaller */
+  opacity: 0.8;
+}
+
+/* Hover Effect */
+.overview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,157 @@
+.analytics-page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.analytics-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--admin-text-900);
+}
+
+.analytics-header p {
+  margin: 8px 0 0;
+  color: var(--admin-text-500);
+}
+
+.analytics-header select {
+  border: 1px solid #c8d5e4;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.analytics-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  box-shadow: var(--admin-shadow);
+  padding: 14px 16px;
+}
+
+.analytics-card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--admin-text-500);
+}
+
+.analytics-card strong {
+  margin-top: 8px;
+  display: block;
+  font-size: 28px;
+  color: var(--admin-accent);
+}
+
+.analytics-table-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  box-shadow: var(--admin-shadow);
+  overflow-x: auto;
+  margin-bottom: 14px;
+}
+
+.analytics-table-card h2 {
+  margin: 0;
+  padding: 16px 16px 8px;
+  font-size: 17px;
+  color: var(--admin-text-900);
+}
+
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ebf1f8;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.analytics-table th {
+  background: #f7fbff;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--admin-text-700);
+  letter-spacing: 0.03em;
+}
+
+.analytics-table tbody tr:nth-child(even) {
+  background: #fbfdff;
+}
+
+.analytics-table tbody tr:hover {
+  background: #f3f8ff;
+}
+
+.analytics-empty {
+  text-align: center;
+  color: var(--admin-text-500);
+  padding: 20px;
+}
+
+.analytics-pagination {
+  padding: 12px 16px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.analytics-pagination button {
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  background: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.analytics-pagination button:hover:not(:disabled) {
+  background: #f2f7ff;
+}
+
+.analytics-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.analytics-pagination span {
+  color: var(--admin-text-700);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .analytics-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .analytics-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-table th,
+  .analytics-table td {
+    padding: 10px 12px;
+  }
+}

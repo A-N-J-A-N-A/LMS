@@ -1,0 +1,248 @@
+.loans-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(80% 120% at 12% 8%, rgba(232, 238, 252, 0.85) 0%, rgba(245, 247, 253, 0.92) 48%, rgba(238, 242, 251, 0.96) 100%),
+    linear-gradient(180deg, #f6f8fd 0%, #eef2fa 100%);
+}
+
+.loans-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 34px 28px 0;
+}
+
+.loans-title {
+  margin: 12px 0 34px;
+  text-align: center;
+  color: #25365c;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+}
+
+.loans-empty {
+  text-align: center;
+  color: #5b6784;
+  font-size: 16px;
+  padding: 24px 0;
+}
+
+.loans-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.loan-product-card {
+  position: relative;
+  background: linear-gradient(180deg, #f8fbff 0%, #f1f5fe 100%);
+  border: 1px solid #dde5f4;
+  border-radius: 18px;
+  padding: 22px 18px 20px;
+  box-shadow: 0 10px 22px rgba(35, 52, 95, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.loan-icon-wrap {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin: -8px auto 18px;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #e8efff 100%);
+  border: 1px solid #d8e2f5;
+  box-shadow: 0 8px 14px rgba(30, 53, 104, 0.12);
+}
+
+.loan-icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.loan-rate-badge {
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  min-width: 92px;
+  border-radius: 14px;
+  padding: 8px 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.loan-rate-badge strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.loan-rate-badge span {
+  font-size: 11px;
+  letter-spacing: 0.2px;
+}
+
+.loan-product-name {
+  margin: 8px 0 6px;
+  text-align: center;
+  color: #223255;
+  font-size: 28px;
+  line-height: 1.12;
+}
+
+.loan-product-rate {
+  margin: 0 0 16px;
+  text-align: center;
+  color: #47536f;
+  font-size: 12px;
+}
+
+.loan-product-rate strong {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.loan-card-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(205, 216, 238, 0.1) 0%, rgba(205, 216, 238, 1) 50%, rgba(205, 216, 238, 0.1) 100%);
+  margin-bottom: 12px;
+}
+
+.loan-know-more {
+  color: #334870;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.loan-know-more:hover {
+  color: #1f3157;
+}
+
+.loan-apply-btn {
+  margin-top: auto;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(33, 54, 105, 0.28);
+}
+
+.loan-apply-btn:hover {
+  filter: brightness(1.05);
+}
+
+.loan-product-rate  {
+  color: #273975;
+}
+
+
+
+.loan-apply-btn.indigo {
+  background: linear-gradient(135deg, #3f529a, #273975);
+}
+
+.loan-apply-btn.blue {
+ background: linear-gradient(135deg, #3f529a, #273975);
+}
+
+.loan-apply-btn.violet {
+ background: linear-gradient(135deg, #3f529a, #273975);
+}
+
+@media (max-width: 1200px) {
+  .loans-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .loans-shell {
+    padding: 26px 14px 0;
+  }
+
+  .loans-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .loan-product-name {
+    font-size: 24px;
+  }
+
+  .loan-product-rate strong {
+    font-size: 17px;
+  }
+}
+
+.loans-footer {
+  margin-top: 22px;
+  border-top: 1px solid #d7dfef;
+  background: linear-gradient(180deg, rgba(243, 246, 253, 0.92) 0%, rgba(233, 239, 250, 0.96) 100%);
+}
+
+.loans-footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 28px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.loans-footer-brand h3 {
+  margin: 0 0 4px;
+  color: #273a61;
+  font-size: 18px;
+}
+
+.loans-footer-brand p {
+  margin: 0;
+  color: #546486;
+  font-size: 13px;
+}
+
+.loans-footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.loans-footer-links a {
+  color: #304975;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.loans-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.loans-footer-copy {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 28px 16px;
+  color: #6a7591;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .loans-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 14px 10px;
+  }
+
+  .loans-footer-copy {
+    padding: 0 14px 14px;
+  }
+}

@@ -1,0 +1,135 @@
+.applications-page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 28px;
+  margin: 0 0 18px;
+  color: var(--admin-text-900);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.controls select,
+.controls input {
+  border: 1px solid #c8d5e4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.table-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: var(--admin-shadow);
+}
+
+.table-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-card thead {
+  background: #f5f8fc;
+}
+
+.table-card th,
+.table-card td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #ebf1f8;
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.pending {
+  background: var(--admin-warning-bg);
+  color: var(--admin-warning-text);
+}
+
+.status.approved {
+  background: var(--admin-success-bg);
+  color: var(--admin-success-text);
+}
+
+.status.rejected {
+  background: var(--admin-danger-bg);
+  color: var(--admin-danger-text);
+}
+
+.review-input {
+  width: 220px;
+  min-height: 70px;
+  border: 1px solid #c8d5e4;
+  border-radius: 8px;
+  padding: 8px;
+  resize: vertical;
+}
+
+.review-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+
+.approve-btn {
+  background: #16a34a;
+}
+
+.reject-btn {
+  background: #dc2626;
+}
+
+.no-data {
+  text-align: center;
+  color: var(--admin-text-500);
+  padding: 24px;
+}
+
+@media (max-width: 860px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .review-input {
+    width: 100%;
+  }
+
+  .review-actions {
+    flex-direction: column;
+  }
+
+  .approve-btn,
+  .reject-btn {
+    width: 100%;
+  }
+}

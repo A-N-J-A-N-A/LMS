@@ -1,0 +1,47 @@
+.tracker-table-wrap {
+  overflow-x: auto;
+}
+
+.status.paid {
+  background: var(--admin-success-bg);
+  color: var(--admin-success-text);
+}
+
+.status.overdue {
+  background: var(--admin-danger-bg);
+  color: var(--admin-danger-text);
+}
+
+.status.upcoming {
+  background: var(--admin-warning-bg);
+  color: var(--admin-warning-text);
+}
+
+.list-pagination {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.page-btn {
+  border: 1px solid var(--admin-border-color, #d6dde8);
+  background: #fff;
+  color: var(--admin-text-primary, #22314a);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--admin-text-secondary, #5d6b7f);
+}

@@ -1,0 +1,101 @@
+.admin-settings-page {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.admin-settings-page h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--admin-text-900);
+}
+
+.admin-settings-page > p {
+  margin: 8px 0 18px;
+  color: var(--admin-text-500);
+}
+
+.settings-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  box-shadow: var(--admin-shadow);
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: var(--admin-text-900);
+}
+
+.settings-card label {
+  font-size: 13px;
+  color: var(--admin-text-700);
+  font-weight: 600;
+}
+
+.settings-card input,
+.settings-card select {
+  border: 1px solid #c8d5e4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.settings-card input:focus,
+.settings-card select:focus {
+  border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(31, 79, 138, 0.14);
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.check-row input {
+  width: 16px;
+  height: 16px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.settings-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-save {
+  background: #1f4f8a;
+  color: #fff;
+}
+
+.btn-reset {
+  background: #e9eff7;
+  color: #1e293b;
+}
+
+.btn-logout {
+  background: #b91c1c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .settings-actions {
+    flex-direction: column;
+  }
+}

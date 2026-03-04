@@ -1,0 +1,105 @@
+.applications-page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 28px;
+  margin: 0 0 18px;
+  color: var(--admin-text-900);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.controls input {
+  border: 1px solid #c8d5e4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.controls input:focus {
+  border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(31, 79, 138, 0.14);
+}
+
+.table-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: var(--admin-shadow);
+}
+
+.table-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-card thead {
+  background: #f5f8fc;
+}
+
+.table-card th,
+.table-card td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #ebf1f8;
+}
+
+.table-card th {
+  font-size: 13px;
+  color: var(--admin-text-700);
+}
+
+.table-card td {
+  font-size: 14px;
+}
+
+.view-btn {
+  border: 1px solid #c8d5e4;
+  background: #ffffff;
+  color: #1f2937;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background: #eef5ff;
+}
+
+.no-data {
+  text-align: center;
+  color: var(--admin-text-500);
+  padding: 24px;
+}
+
+.pagination {
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.pagination button {
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  background: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

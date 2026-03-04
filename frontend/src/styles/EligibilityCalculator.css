@@ -1,0 +1,71 @@
+.eligibility-theme .calc-tool-card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.calc-form-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.elig-result {
+  margin-top: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.elig-result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.result-head {
+  border: 1px solid #dae6fb;
+  border-radius: 10px;
+  background: #f5f9ff;
+  padding: 10px 12px;
+}
+
+.result-head strong {
+  display: block;
+  color: #1f3a69;
+  font-size: 22px;
+}
+
+.result-head span {
+  color: #5a6f96;
+  font-size: 13px;
+}
+
+.bar-chart {
+  margin-top: 12px;
+}
+
+.bar-track {
+  height: 16px;
+  border-radius: 999px;
+  background: #e3e9f5;
+  overflow: hidden;
+}
+
+.bar-fill {
+  width: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3c6eca, #2f4b86);
+  transition: width 700ms ease;
+}
+
+.bar-caption {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  color: #65769a;
+  font-size: 12px;
+}
+
+.error-text {
+  margin-top: 10px;
+  color: #cb2c2c !important;
+  font-size: 13px;
+}

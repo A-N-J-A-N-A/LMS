@@ -1,0 +1,35 @@
+.user-loans-page {
+    display: flex;
+    justify-content: space-around;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .user-loans-page {
+    justify-content: space-between;
+    padding: 16px;
+  }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .user-loans-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .user-loans-page {
+    padding: 12px;
+    gap: 16px;
+  }
+}

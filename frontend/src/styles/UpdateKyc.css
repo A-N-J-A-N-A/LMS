@@ -1,0 +1,111 @@
+
+.update-kyc-page {
+    padding-top: 78px;
+}
+
+.update-kyc-page .loan-page {
+    max-width: 860px;
+    padding-top: 0;
+}
+
+.update-kyc-page .card-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.kyc-back-button {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #1e3a68;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 0 8px 0;
+}
+
+.kyc-back-button:hover {
+    background: #f8fafc;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #1f2937;
+    line-height: 1.4;
+    margin-left: 26px;
+}
+
+.checkbox-label input {
+    width: 18px;
+    height: 18px;
+    margin: 1px 0 0;
+    flex-shrink: 0;
+    accent-color: #2563eb;
+}
+
+.file-selected {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #059669;
+    font-weight: 500;
+}
+.required-star {
+    color: #dc2626;
+    margin-left: 2px;
+}
+
+.kyc-error-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 16px;
+}
+
+.kyc-error-modal {
+    width: min(460px, 100%);
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 20px 48px rgba(15, 23, 42, 0.25);
+    border: 1px solid #fecaca;
+}
+
+.kyc-error-title {
+    margin: 0 0 8px;
+    color: #b91c1c;
+    font-size: 18px;
+}
+
+.kyc-error-message {
+    margin: 0 0 14px;
+    color: #1f2937;
+    font-size: 14px;
+}
+
+.kyc-error-close {
+    border: 0;
+    background: #dc2626;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .update-kyc-page {
+        padding-top: 74px;
+    }
+
+    .kyc-back-button {
+        margin-left: 0;
+    }
+}

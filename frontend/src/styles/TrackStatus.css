@@ -1,0 +1,102 @@
+/* PAGE */
+.track-page {
+    min-height: calc(100vh - 64px); /* below navbar */
+    background: #f4f6fb;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+/* CARD */
+.track-card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+.track-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* FORM */
+.track-form {
+    display: flex;
+    gap: 12px;
+}
+
+.track-input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.track-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.track-button {
+    padding: 12px 20px;
+    background: #152851;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.track-button:hover {
+    background: #1e40af;
+}
+
+/* RESULT */
+.track-result {
+    margin-top: 28px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.track-result p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* ERROR */
+.error-text {
+    margin-top: 16px;
+    padding: 12px 14px;
+    background: #fdecea;
+    border-left: 4px solid #d32f2f;
+    border-radius: 6px;
+    color: #b71c1c;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .track-form {
+        flex-direction: column;
+    }
+
+    .track-button {
+        width: 100%;
+    }
+}

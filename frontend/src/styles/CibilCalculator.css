@@ -1,0 +1,128 @@
+.cibil-theme .calc-tool-card {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.cibil-input-grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.cibil-input-grid label {
+  font-size: 12px;
+  color: #526688;
+  font-weight: 700;
+}
+
+.cibil-input-grid input[type="number"] {
+  min-height: 42px;
+  border-radius: 8px;
+  border: 1px solid #cfd8ea;
+  padding: 10px 12px;
+  color: #1f2f4f;
+  background: #fff;
+}
+
+.cibil-input-grid input[type="number"]:focus {
+  outline: none;
+  border-color: #4a6fb2;
+  box-shadow: 0 0 0 3px rgba(74, 111, 178, 0.14);
+}
+
+.customer-id-chip {
+  margin: 2px 0 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #dbe5f7;
+  background: #f6f9ff;
+  color: #445b84;
+  font-size: 12px;
+}
+
+.customer-id-chip strong {
+  color: #233d6d;
+}
+
+.primary-cta {
+  width: 100%;
+  min-height: 44px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2f4b86 0%, #243b6d 100%);
+  box-shadow: 0 10px 20px rgba(30, 47, 87, 0.24);
+}
+
+.primary-cta:hover {
+  filter: brightness(1.05);
+}
+
+.cibil-result {
+  margin-top: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.cibil-result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.score-main {
+  border: 1px solid #dae6fb;
+  border-radius: 10px;
+  background: #f5f9ff;
+  padding: 12px;
+  text-align: center;
+}
+
+.score-main span {
+  display: block;
+  color: #5a6f96;
+  font-size: 12px;
+}
+
+.score-main strong {
+  display: block;
+  color: #1f3a69;
+  font-size: 38px;
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.score-main em {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.gauge-wrap {
+  margin-top: 12px;
+}
+
+.gauge-track {
+  height: 14px;
+  border-radius: 999px;
+  background: #e3e9f5;
+  overflow: hidden;
+}
+
+.gauge-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  transition: width 700ms ease;
+}
+
+.gauge-labels {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  color: #65769a;
+  font-size: 12px;
+}

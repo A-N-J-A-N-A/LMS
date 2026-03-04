@@ -1,0 +1,116 @@
+.noti-page {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 86px 16px 24px;
+}
+
+.noti-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.noti-head h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #111827;
+}
+
+.noti-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.noti-actions select,
+.noti-actions button {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+.noti-list {
+  display: grid;
+  gap: 10px;
+}
+
+.noti-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.noti-card.unread {
+  border-color: #60a5fa;
+  background: #eff6ff;
+}
+
+.noti-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.noti-inline-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.noti-row h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.noti-card p {
+  margin: 8px 0 10px;
+  color: #374151;
+}
+
+.noti-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.read-btn {
+  border: 1px solid #93c5fd;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.kyc-btn {
+  border: 1px solid #fca5a5;
+  background: #fef2f2;
+  color: #991b1b;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .noti-page {
+    padding-top: 82px;
+  }
+
+  .noti-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .noti-page {
+    padding-top: 78px;
+  }
+}
